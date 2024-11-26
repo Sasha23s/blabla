@@ -1,0 +1,200 @@
+header{
+    border: 2px solid rgb(0, 0, 0);
+    width: 99.8%;
+    height: 50px;
+}
+body{
+    margin: 0 auto;
+}
+.opis{
+    text-align: center;
+}
+div{
+    border:2px solid rgb(0, 255, 98);
+}
+.ysl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:repeat(3, 100px);
+    grid-template-areas:
+    "me1 me2 me3"
+    "me1 me2 me3"
+    "me1 me2 me3";
+    /* "me1 me2 me3"; */
+    width: 60%;
+    /* height: 30px; */
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 30px
+}
+.a1{
+    grid-area: me1;
+}
+.a2{
+    grid-area: me2;
+}
+.a3{
+    grid-area: me3;
+}
+/* .portf{    
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+    grid-template-areas:
+    "ma1 ma2 ma3 ma4"
+    "ma1 ma2 ma3 ma4"
+    "ma5 ma6 ma7 ma8"
+    "ma5 ma6 ma7 ma8"
+    "ma9 ma10 ma11 ma12"
+    "ma9 ma10 ma11 ma12";
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+} */
+.portf{    
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas:
+    "ma1 ma2 ma3"
+    "ma1 ma2 ma3"
+    "ma4 ma5 ma6"
+    "ma4 ma5 ma6"
+    "ma7 ma8 ma9"
+    "ma7 ma8 ma9";
+    width: 90%;
+    /* height: 1000px; */
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+}
+.b1{
+    grid-area: ma1;
+}
+.b2{
+    grid-area: ma2;
+}
+.b3{
+    grid-area: ma3;
+}
+.b4{
+    grid-area: ma4;
+}
+.b5{
+    grid-area: ma5;
+}
+.b6{
+    grid-area: ma6;
+}
+ .b7{
+    grid-area: ma7;
+}
+.b8{
+    grid-area: ma8;
+}
+.b9{
+    grid-area: ma9;
+}
+/* .b10{
+    grid-area: ma10;
+} */
+/* .b11{
+    grid-area: ma11;
+}
+.b12{
+    grid-area: ma12;
+} */
+.otthev{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas:
+    "mu1 mu2 mu3"
+    "mu4 mu5 mu6";
+    width: 90%;
+    height: 750px;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+}
+.w1{
+    grid-area: mu1;
+}
+.w2{
+    grid-area: mu2;
+}
+.w3{
+    grid-area: mu3;
+}
+.w4{
+    grid-area: mu4;
+    display: none;
+}
+.w5{
+    grid-area: mu5;
+}
+.w6{
+    grid-area: mu6;
+    display: none;
+}
+@media(max-width:950px){
+     .ysl{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:repeat(3, 500px);
+        grid-template-areas:
+        "me1 me1"
+        "me2 me2"
+        "me3 me3";
+        width: 65%;
+        /* height: 30vw;*/
+        margin-left: 20%;
+        margin-right: 30%;
+        gap: 30px
+    }
+    .portf{    
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas:
+        "ma1 ma2"
+        "ma3 ma4"
+        "ma5 ma6"
+        "ma7 ma8";
+        /* "ma1 ma2 ma3"
+        "ma1 ma2 ma3"
+        "ma4 ma5 ma6"
+        "ma4 ma5 ma6"
+        "ma7 ma8 ma9"
+        "ma7 ma8 ma9"; */
+        width: 90%;
+        /* height: 1500px; */
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 30px;
+    }
+    .b9{
+        display: none;
+    }
+    .otthev{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        grid-template-areas:
+        "mu1 mu2" 
+        "mu3 mu5";
+        width: 90%;
+        height: 750px;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 30px;
+    }
+    .w4{
+        display: none;
+    }
+    .w6{
+        display: none;
+    }
+}
